@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-import { Feedback } from "../../functions/Feedback";
+import { feedback } from "../../functions/Feedback";
 import CardFeed from "../CardFeed";
 
 const StyleCardReview = styled.div`
@@ -18,10 +18,10 @@ const StyleCardReview = styled.div`
 `;
 
 const StyleCarousel = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(${feedback.length}, 22rem);
+  grid-template-rows: repeat(1, 600px);
   align-items: center;
-  justify-content: flex-start;
   overflow: hidden;
   /* white-space: nowrap; */
   border-radius: 15px;
@@ -32,38 +32,49 @@ const StyleCarousel = styled.div`
   position: absolute;
 `;
 
-const StyleButtonCarousel = styled.div`
+const ContainerButtonCarousel = styled.div`
   position: absolute;
   display: flex;
   gap: 1rem;
-  bottom: -22rem;
-  border: 3px solid blue;
+  bottom: 0rem;
+  gap: 70rem;
+  /* border: 3px solid blue; */
+  background: transparent;
+`;
+
+const StyleButtonCarousel = styled.button`
+  background: transparent;
+  border: none;
+  cursor: ${(props) => props.cursor};
+  filter: ${(props) => props.filter};
 `;
 
 const CardReviewStyled = () => {
-  const [previous, setPrevius] = useState(-21);
+  const [previous, setPrevius] = useState(-22);
   const [positionCurrent, setPositionCurrent] = useState(0);
 
   const previousComent = () => {
-    if (previous === -21) {
-      setPrevius(-21);
+    if (previous === -22) {
+      setPrevius(-22);
     } else {
-      setPrevius(previous - 21);
+      setPrevius(previous - 22);
       setPositionCurrent(positionCurrent - 1);
     }
   };
 
   const nextComent = () => {
-    setPrevius(previous + 21);
-    setPositionCurrent(positionCurrent + 1);
+    if (previous === 22 * (feedback.length - 2)) {
+      setPrevius(22 * (feedback.length - 2));
+    } else {
+      setPrevius(previous + 22);
+      setPositionCurrent(positionCurrent + 1);
+    }
   };
-
-  console.log(previous);
 
   return (
     <StyleCardReview>
       <StyleCarousel>
-        {Feedback.map((feed, index) => (
+        {feedback.map((feed, index) => (
           <CardFeed
             key={uuidv4()}
             avatar={feed.avatar}
@@ -71,15 +82,28 @@ const CardReviewStyled = () => {
             stars={feed.stars}
             texto={feed.texto}
             position={previous}
-            height={index === positionCurrent ? "500px" : "300px"}
+            height={index === positionCurrent ? "500px" : "350px"}
+            filter={index !== positionCurrent ? "grayscale(100%) blur(1px)" : "none"}
           />
         ))}
       </StyleCarousel>
 
-      <StyleButtonCarousel>
-        <button onClick={previousComent}>PREVIOUS</button>
-        <button onClick={nextComent}>NEXT</button>
-      </StyleButtonCarousel>
+      <ContainerButtonCarousel>
+        <StyleButtonCarousel
+          filter={previous === -22 ? "grayscale(100%)" : "none"}
+          cursor={previous === -22 ? "null" : "pointer"}
+          onClick={previousComent}
+        >
+          <img src="./src/assets/icon-left.png" alt="icon-left" />
+        </StyleButtonCarousel>
+        <StyleButtonCarousel
+          filter={previous === 22 * (feedback.length - 2) ? "grayscale(100%)" : "none"}
+          cursor={previous === 22 * (feedback.length - 2) ? "null" : "pointer"}
+          onClick={nextComent}
+        >
+          <img src="./src/assets/icon-right.png" alt="icon-left" />
+        </StyleButtonCarousel>
+      </ContainerButtonCarousel>
     </StyleCardReview>
   );
 };

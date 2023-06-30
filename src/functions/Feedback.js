@@ -1,4 +1,4 @@
-export const Feedback = [
+export const feedback = [
   {
     avatar: "https://i.pinimg.com/564x/26/f9/34/26f93413514f52e981ee5527a6cfe317.jpg",
     stars: 5,

@@ -9,18 +9,41 @@ const StyleCardFeed = styled.div`
   display: flex;
   flex-direction: column;
   width: 20rem;
+  gap: 1rem;
   height: ${(props) => props.height};
   border-radius: 15px;
-  margin: 0 1rem;
-  border: 2px solid var(--color-terciary);
+  border: 3px solid var(--color-secondary);
+  background-color: var(--color-background);
   position: relative;
+
+  -webkit-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
   /* right: 3rem; */
   right: ${(props) => props.right + "rem"};
+  filter: ${(props) => props.filter};
+  animation: side 1s ease-out;
+
+  @keyframes side {
+    0% {
+      transform: translate3d(30%, 0, 0);
+    }
+    50% {
+      transform: translate3d(25%, 0, 0);
+    }
+    90% {
+      transform: translate3d(10%, 0, 0);
+    }
+    100% {
+      /* opacity: 1; */
+      transform: none;
+    }
+  }
 `;
 
-const CardFeed = ({ avatar, nombre, stars, texto, position, height }) => {
+const CardFeed = ({ avatar, nombre, stars, texto, position, height, filter }) => {
   return (
-    <StyleCardFeed right={position} height={height}>
+    <StyleCardFeed right={position} height={height} filter={filter}>
       <CardHeader
         avatar={<Avatar src={avatar} sx={{ bgcolor: "var(--color-terciary)" }}></Avatar>}
         action={

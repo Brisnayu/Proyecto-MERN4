@@ -10,7 +10,7 @@ const StyleCardFeed = styled.div`
   flex-direction: column;
   width: 20rem;
   gap: 1rem;
-  height: ${(props) => props.height};
+  height: ${({ $height }) => $height};
   border-radius: 15px;
   border: 3px solid var(--color-secondary);
   background-color: var(--color-background);
@@ -20,30 +20,29 @@ const StyleCardFeed = styled.div`
   -moz-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
   /* right: 3rem; */
-  right: ${(props) => props.right + "rem"};
-  filter: ${(props) => props.filter};
-  animation: side 1s ease-out;
+  right: ${({ $right }) => $right + "rem"};
+  filter: ${({ $filter }) => $filter};
+  animation: slide-on 1s ease-in-out;
 
-  @keyframes side {
-    0% {
-      transform: translate3d(30%, 0, 0);
+  @keyframes slide-on {
+    96% {
+      scroll-snap-align: center;
     }
-    50% {
-      transform: translate3d(25%, 0, 0);
+    97% {
+      scroll-snap-align: none;
     }
-    90% {
-      transform: translate3d(10%, 0, 0);
+    99% {
+      scroll-snap-align: none;
     }
     100% {
-      /* opacity: 1; */
-      transform: none;
+      scroll-snap-align: center;
     }
   }
 `;
 
-const CardFeed = ({ avatar, nombre, stars, texto, position, height, filter }) => {
+const CardFeed = ({ avatar, nombre, stars, texto, $position, $height, $filter }) => {
   return (
-    <StyleCardFeed right={position} height={height} filter={filter}>
+    <StyleCardFeed $right={$position} $height={$height} $filter={$filter}>
       <CardHeader
         avatar={<Avatar src={avatar} sx={{ bgcolor: "var(--color-terciary)" }}></Avatar>}
         action={
@@ -53,7 +52,7 @@ const CardFeed = ({ avatar, nombre, stars, texto, position, height, filter }) =>
             alt="icon-heart"
           />
         }
-        title={<CursiveStyled fontSize={"coment"}>{nombre}</CursiveStyled>}
+        title={<CursiveStyled $fontSize={"coment"}>{nombre}</CursiveStyled>}
         subheader={<Rating name="text-feedback" value={stars} readOnly precision={0.5} />}
       />
       <CardContent style={{ width: "19rem" }}>

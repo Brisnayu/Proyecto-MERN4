@@ -19,13 +19,13 @@ const Item = styled(Paper)(({ theme }) => ({
 const Home = () => {
   return (
     <MainStyled>
-      <ArticleStyled background={`url("./img-main.jpg")`} height={"80vh"}>
-        <TitleStyled color={"text"} fontsize={"5rem"}>
+      <ArticleStyled $background={`url("./img-main.jpg")`} $height={"80vh"}>
+        <TitleStyled $color={"white"} $fontsize={"5rem"}>
           {`We're`} Happy To Pamper Your Pets!
         </TitleStyled>
       </ArticleStyled>
 
-      <ArticleStyled height={"15vh"} top={"-4rem"} padding={"0 15rem"}>
+      <ArticleStyled $height={"15vh"} $top={"-4rem"} $padding={"0 15rem"}>
         <Grid container rowSpacing={1} columnSpacing={{ md: 3 }}>
           <Grid item xs={4}>
             <Item>

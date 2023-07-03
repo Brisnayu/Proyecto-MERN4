@@ -13,7 +13,7 @@ const Navigation = () => {
           <NavLink to="/first-pet">First Pet</NavLink>
         </li>
         <li>
-          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/gallery">Gallery</NavLink>
         </li>
         <li>
           <NavLink to="/shop">Shop</NavLink>

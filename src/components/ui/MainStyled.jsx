@@ -6,7 +6,8 @@ const StyleMain = styled.main`
   align-items: center;
   border: 2px solid red;
   width: 100%;
-  height: 140vh;
+  min-height: 100vh;
+  font-family: "PT Sans", sans-serif;
 `;
 
 // const StyleFondo = styled.div`

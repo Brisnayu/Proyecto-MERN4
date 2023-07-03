@@ -5,17 +5,17 @@ const StyleTitle = styled.h2`
   align-items: center;
   width: 32rem;
   /* color: var(--color-background); */
-  color: ${(props) => (props.color === "text" ? "var(--color-background)" : "black")};
+  color: ${({ $color }) => ($color === "white" ? "var(--color-background)" : "black")};
   font-family: "PT Sans", sans-serif;
   /* font-size: 5rem; */
-  font-size: ${(props) => props.fontsize};
+  font-size: ${({ $fontsize }) => $fontsize};
   font-weight: bolder;
   /* border: 1px solid yellow; */
 `;
 
-const TitleStyled = ({ children, color, fontsize }) => {
+const TitleStyled = ({ children, $color, $fontsize }) => {
   return (
-    <StyleTitle color={color} fontsize={fontsize}>
+    <StyleTitle $color={$color} $fontsize={$fontsize}>
       {children}
     </StyleTitle>
   );

@@ -1,13 +1,10 @@
-var name = "golden retriever";
-$.ajax({
-  method: "GET",
-  url: "https://api.api-ninjas.com/v1/dogs?name=" + name,
-  headers: { "X-Api-Key": "YOUR_API_KEY" },
-  contentType: "application/json",
-  success: function (result) {
-    console.log(result);
-  },
-  error: function ajaxError(jqXHR) {
-    console.error("Error: ", jqXHR.responseText);
-  },
-});
+import axios from "axios";
+import { useEffect } from "react";
+
+export const PetitionCat = () => {
+  useEffect(() => {
+    axios
+      .get("https://api.thecatapi.com/v1/images/search?limit=10")
+      .then((res) => console.log(res));
+  }, []);
+};

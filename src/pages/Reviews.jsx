@@ -1,8 +1,20 @@
 import React from "react";
+import { styled } from "styled-components";
 
-import CardReviewStyled from "../components/ui/CardStyled";
+import CarouselReviews from "../components/Carousel";
 import MainStyled from "../components/ui/MainStyled";
 import SectionStyled from "../components/ui/SectionStyled";
+
+const CarouselContainer = styled.div`
+  padding: 3rem;
+  margin: 2rem;
+  width: 50%;
+  height: 100%;
+  border: 3px solid var(--color-secondary);
+  -webkit-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
+`;
 
 const Reviews = () => {
   return (
@@ -16,7 +28,9 @@ const Reviews = () => {
         title={"What Our Clients Say About Us"}
         parraf={"100% real feedback from 100% real customers."}
       ></SectionStyled>
-      <CardReviewStyled />
+      <CarouselContainer>
+        <CarouselReviews />
+      </CarouselContainer>
     </MainStyled>
   );
 };

@@ -1,46 +1,71 @@
-import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
+import styled from "@emotion/styled";
 import React from "react";
 
-import ArticleStyled from "../components/ui/ArticleStyled";
+import InfoFirstPet from "../components/InfoFirstPet";
 import MainStyled from "../components/ui/MainStyled";
+import SectionStyled from "../components/ui/SectionStyled";
+import {
+  firstBird,
+  firstCat,
+  firstDog,
+  firstFish,
+  firstRabbit,
+  firstTortoise,
+} from "../functions/InformationPets";
+
+const StyleInfoFirstPet = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  margin: 2rem 0;
+`;
 
 const FirstPet = () => {
   return (
     <MainStyled>
-      <ArticleStyled
-        background={`url("https://1.bp.blogspot.com/-GK25c7lX6Bg/YKx9P-DDxrI/AAAAAAAAIm0/IFMeSHQbAvkifmCLaom7e0Pu5hZf6uhWgCLcBGAsYHQ/s700/cuidado-gatitos-bebes-01.jpeg")`}
-        height={"70vh"}
-      ></ArticleStyled>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={"✅"}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-            lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={"✅"}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography>Accordion 2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-            lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+      <SectionStyled
+        src={
+          "https://phantom-marca.unidadeditorial.es/3acad74a7b46aa6f5c8c75f1ee01a1a9/resize/828/f/jpg/assets/multimedia/imagenes/2022/11/10/16681001689615.jpg"
+        }
+        alt={"image-pets"}
+        cursive={"First Pet"}
+        title={"Follow Our Advice"}
+        parraf={"100% real advice that you can apply 100% of the time."}
+      ></SectionStyled>
+
+      <StyleInfoFirstPet>
+        <InfoFirstPet
+          array={firstDog}
+          iconPet="./src/assets/icon-pets/icon-dog.png"
+          pet="perro"
+        />
+        <InfoFirstPet
+          array={firstCat}
+          iconPet="./src/assets/icon-pets/icon-cat.png"
+          pet="gato"
+        />
+        <InfoFirstPet
+          array={firstRabbit}
+          iconPet="./src/assets/icon-pets/icon-rabbit.png"
+          pet="conejo"
+        />
+        <InfoFirstPet
+          array={firstTortoise}
+          iconPet="./src/assets/icon-pets/icon-tortoise.png"
+          pet="/ primera tortuga"
+        />
+        <InfoFirstPet
+          array={firstFish}
+          iconPet="./src/assets/icon-pets/icon-fish.png"
+          pet="pez"
+        />
+        <InfoFirstPet
+          array={firstBird}
+          iconPet="./src/assets/icon-pets/icon-bird.png"
+          pet="ave"
+        />
+      </StyleInfoFirstPet>
     </MainStyled>
   );
 };

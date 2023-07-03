@@ -7,12 +7,12 @@ const StyleCursive = styled.h3`
   color: var(--color-primary);
   font-family: "Pacifico", cursive;
   /* font-size: 2rem; */
-  font-size: ${(props) => (props.fontSize === "coment" ? "1.2rem" : "2rem")};
+  font-size: ${({ $fontSize }) => ($fontSize === "coment" ? "1.2rem" : "2rem")};
   font-weight: 100;
 `;
 
-const CursiveStyled = ({ children, fontSize }) => {
-  return <StyleCursive fontSize={fontSize}>{children}</StyleCursive>;
+const CursiveStyled = ({ children, $fontSize }) => {
+  return <StyleCursive $fontSize={$fontSize}>{children}</StyleCursive>;
 };
 
 export default CursiveStyled;

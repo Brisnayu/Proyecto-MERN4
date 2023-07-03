@@ -20,14 +20,14 @@ const StyleSection = styled.section`
 const SectionStyled = ({ src, alt, cursive, title, parraf }) => {
   return (
     <StyleSection>
-      <DivStyled flexD={"column"}>
+      <DivStyled $flexD={"column"}>
         <img
           style={{ height: "20rem", transform: "scaleX(-1)", borderRadius: "10px" }}
           src={src}
           alt={alt}
         />
       </DivStyled>
-      <DivStyled flexD={"column"}>
+      <DivStyled $flexD={"column"}>
         <CursiveStyled> {cursive} </CursiveStyled>
         <TitleStyled> {title} </TitleStyled>
         <p> {parraf} </p>

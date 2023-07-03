@@ -7,7 +7,7 @@ import Spinner from "./components/Spinner.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
 const FirstPet = lazy(() => import("./pages/FirstPet.jsx"));
-const Services = lazy(() => import("./pages/Services.jsx"));
+const Gallery = lazy(() => import("./pages/Gallery.jsx"));
 const Shop = lazy(() => import("./pages/Shop.jsx"));
 const Reviews = lazy(() => import("./pages/Reviews.jsx"));
 const AboutUs = lazy(() => import("./pages/AboutUs.jsx"));
@@ -34,10 +34,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             }
           />
           <Route
-            path="/services"
+            path="/gallery"
             element={
               <React.Suspense fallback={<Spinner />}>
-                <Services />
+                <Gallery />
               </React.Suspense>
             }
           />

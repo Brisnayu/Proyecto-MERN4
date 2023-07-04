@@ -6,7 +6,7 @@ export const ProfessionalsPets = [
   },
   {
     profesional: "Laura Pérez",
-    profesion: "Adiestrador de perros",
+    profesion: "Adiestradora de perros",
     icon: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
   },
   {

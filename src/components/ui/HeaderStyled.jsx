@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyleHeader = styled.header`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0.5rem 2rem;
   font-family: "Pacifico", cursive;

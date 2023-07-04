@@ -9,8 +9,8 @@ import TitleStyled from "./ui/TitleStyled";
 const ContainerProffesionals = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 200px;
-  border: 2px solid yellow;
 `;
 
 const CardPersonal = () => {

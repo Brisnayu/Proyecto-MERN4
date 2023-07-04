@@ -4,12 +4,12 @@ const GalleryList = ({ arrayList }) => {
   return (
     <Box
       sx={{
-        width: "50%",
+        width: "100%",
         height: "auto",
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "center",
-        padding: "1rem 2rem 5rem 2rem",
+        padding: "1rem 2rem 2rem 2rem",
       }}
     >
       <ImageList variant="masonry" cols={3} gap={8}>

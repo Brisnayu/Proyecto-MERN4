@@ -4,7 +4,6 @@ const StyleMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
   width: 100%;
   min-height: 100vh;
   font-family: "PT Sans", sans-serif;

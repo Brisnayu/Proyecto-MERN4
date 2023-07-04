@@ -31,7 +31,7 @@ const Gallery = () => {
       ></SectionStyled>
 
       {arrayCat.length > 0 && (
-        <Box sx={{ display: "flex", flexDirection: "row" }}>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
           <GalleryList arrayList={arrayCat} />
           <GalleryList arrayList={arrayDog} />
         </Box>

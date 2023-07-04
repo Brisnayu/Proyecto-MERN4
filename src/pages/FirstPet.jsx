@@ -19,6 +19,10 @@ const StyleInfoFirstPet = styled.div`
   width: 60%;
   height: auto;
   margin: 2rem 0;
+
+  @media only screen and (max-width: 624px) {
+    width: 95%;
+  }
 `;
 
 const FirstPet = () => {

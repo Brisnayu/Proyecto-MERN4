@@ -1,20 +1,10 @@
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-import React from "react";
 
+import CardHome from "../components/CardHome";
 import ArticleStyled from "../components/ui/ArticleStyled";
 import MainStyled from "../components/ui/MainStyled";
 import SectionStyled from "../components/ui/SectionStyled";
 import TitleStyled from "../components/ui/TitleStyled";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(4),
-  textAlign: "center",
-  color: "#1A2027",
-}));
 
 const Home = () => {
   return (
@@ -25,26 +15,20 @@ const Home = () => {
         </TitleStyled>
       </ArticleStyled>
 
-      <ArticleStyled $height={"15vh"} $top={"-4rem"} $padding={"0 15rem"}>
+      <ArticleStyled $height={"15vh"} $top={"-4rem"} $padding={"0 3rem"}>
         <Grid container rowSpacing={1} columnSpacing={{ md: 3 }}>
-          <Grid item xs={4}>
-            <Item>
-              <h3>Natural Pet Foods</h3>
-              <p>Premium natural pet food from the brands you know</p>
-            </Item>
-          </Grid>
-          <Grid item xs={4}>
-            <Item>
-              <h3>Toys & Supplies</h3>
-              <p>If you have a pet, you need toys and we have a huge selection</p>
-            </Item>
-          </Grid>
-          <Grid item xs={4}>
-            <Item>
-              <h3>Grooming</h3>
-              <p>PetsLand is proud to offer full service GroomShops</p>
-            </Item>
-          </Grid>
+          <CardHome
+            title="Alimentos naturales para mascotas"
+            text="Alimento natural premium para mascotas de las marcas que conoces."
+          />
+          <CardHome
+            title="Juguetes y Suministros"
+            text="Si tienes una mascota, necesitas juguetes y tenemos una gran selección."
+          />
+          <CardHome
+            title="Cuidados"
+            text="PetsLand se enorgullece de ofrecer un servicio completo."
+          />
         </Grid>
       </ArticleStyled>
 

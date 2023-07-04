@@ -3,7 +3,8 @@ import styled from "styled-components";
 const StyleTitle = styled.h2`
   display: flex;
   align-items: center;
-  width: 32rem;
+  justify-content: center;
+  /* width: 32rem; */
   /* color: var(--color-background); */
   color: ${({ $color }) => ($color === "white" ? "var(--color-background)" : "black")};
   font-family: "PT Sans", sans-serif;

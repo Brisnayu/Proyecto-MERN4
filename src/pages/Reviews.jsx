@@ -14,6 +14,10 @@ const CarouselContainer = styled.div`
   -webkit-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
+
+  @media only screen and (max-width: 960px) {
+    width: 95%;
+  }
 `;
 
 const Reviews = () => {

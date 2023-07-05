@@ -13,6 +13,7 @@
   list-style: none;
   outline: none;
   color: inherit;
+  animation: side 1s ease;
 }
 
 .active {

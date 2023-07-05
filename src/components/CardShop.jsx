@@ -2,17 +2,27 @@ import { Rating } from "@mui/material";
 import { styled } from "styled-components";
 import { v4 as uuidv4 } from "uuid";
 
-import TitleStyled from "./ui/TitleStyled";
-
 const StyleCardShop = styled.div`
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  gap: 0.5rem;
   font-family: "PT Sans", sans-serif;
   background-color: var(--color-background);
+  width: 18rem;
+  height: 25rem;
+  border: 3px solid var(--color-secondary);
+  animation: side 2s ease-in-out;
+
+  @keyframes side {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const StyleShopContainer = styled.div`
@@ -22,7 +32,7 @@ const StyleShopContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 `;
 
 const CardShop = ({ productList }) => {
@@ -35,7 +45,7 @@ const CardShop = ({ productList }) => {
             src={product.icon}
             alt={product.nombre}
           />
-          <TitleStyled>{product.nombre}</TitleStyled>
+          <h2>{product.nombre}</h2>
           <p>{product.precio}€</p>
           <Rating
             name="text-feedback"

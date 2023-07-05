@@ -19,15 +19,20 @@ const StyleArticle = styled.article`
   top: ${({ $top }) => $top};
   padding: ${({ $padding }) => $padding};
   /* background-position-y: 70%; */
+
+  @media only screen and (max-width: 720px) {
+    display: ${({ $vista }) => ($vista === "none" ? "none" : null)};
+  }
 `;
 
-const ArticleStyled = ({ $background, $height, $top, $padding, children }) => {
+const ArticleStyled = ({ $background, $height, $top, $padding, $vista, children }) => {
   return (
     <StyleArticle
       $background={$background}
       $height={$height}
       $top={$top}
       $padding={$padding}
+      $vista={$vista}
     >
       {children}
     </StyleArticle>

@@ -20,11 +20,12 @@ const NavbarWrapper = styled.nav`
   /* justify-content: flex-start; */
   align-items: center;
   /* background: turquoise; */
+  backdrop-filter: blur(10px);
   position: fixed;
   z-index: 2;
-  top: 11vh;
+  top: 10vh;
   right: ${(props) => (props.open ? "0" : "-100%")};
-  width: 20rem;
+  width: 100%;
   height: 100vh;
   transition: right 0.3s linear;
 
@@ -54,7 +55,7 @@ const NavigationMui = () => {
 
   return (
     <>
-      <CursiveStyled>Patitas.com</CursiveStyled>
+      <CursiveStyled>PetsLand.com</CursiveStyled>
       <NavbarWrapper open={open}>
         <UlStyled>
           <li>

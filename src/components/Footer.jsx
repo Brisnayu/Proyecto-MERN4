@@ -17,7 +17,7 @@ const StyleFooter = styled.footer`
 const Footer = () => {
   return (
     <StyleFooter>
-      <CursiveStyled>Patitas.com</CursiveStyled>
+      <CursiveStyled>PetsLand.com</CursiveStyled>
       <Rrss />
       <p>Created with love 💕 by Brisna Páez for Rock The Code.</p>
     </StyleFooter>

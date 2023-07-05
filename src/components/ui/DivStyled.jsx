@@ -4,7 +4,7 @@ const StyleDiv = styled.div`
   display: flex;
   flex-direction: ${({ $flexD }) => ($flexD === "row" ? "row" : "column")};
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
   width: 100%;

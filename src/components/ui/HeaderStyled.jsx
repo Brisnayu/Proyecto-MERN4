@@ -10,6 +10,8 @@ const StyleHeader = styled.header`
   font-size: 1.3rem;
   color: var(--color-primary);
   background-color: var(--color-background);
+  height: 10vh;
+  width: auto;
 `;
 
 const HeaderStyled = ({ children }) => {

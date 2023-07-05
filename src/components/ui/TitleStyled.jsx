@@ -11,7 +11,16 @@ const StyleTitle = styled.h2`
   /* font-size: 5rem; */
   font-size: ${({ $fontsize }) => $fontsize};
   font-weight: bolder;
+  padding: 0 5rem;
   /* border: 1px solid yellow; */
+
+  @media only screen and (max-width: 700px) {
+    padding: 0;
+    font-size: 2rem;
+    width: 10rem;
+    height: 20rem;
+    padding: 0 1rem;
+  }
 `;
 
 const TitleStyled = ({ children, $color, $fontsize }) => {

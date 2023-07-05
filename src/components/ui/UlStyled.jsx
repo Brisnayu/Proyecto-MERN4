@@ -21,7 +21,9 @@ const StyleUl = styled.ul`
     position: initial;
     height: auto;
     justify-content: center;
-    border: 3px solid red;
+    background-color: var(--color-background);
+    width: 100%;
+    height: auto;
   }
 `;
 

@@ -1,8 +1,6 @@
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { v4 as uuidv4 } from "uuid";
 
-import TitleStyled from "./ui/TitleStyled";
-
 const InfoFirstPet = ({ array, iconPet, pet }) => {
   return (
     <Accordion>
@@ -16,7 +14,7 @@ const InfoFirstPet = ({ array, iconPet, pet }) => {
           alt="icon-fish"
           style={{ height: "4.5rem", marginRight: "2rem" }}
         />
-        <TitleStyled>Consejos para tu primer {pet} en tu hogar</TitleStyled>
+        <h2>Consejos para tu primer {pet} en tu hogar</h2>
       </AccordionSummary>
       <AccordionDetails>
         <ul>

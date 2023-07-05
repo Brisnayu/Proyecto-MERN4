@@ -1,7 +1,7 @@
 import React from "react";
 
+import CursiveStyled from "./ui/CursiveStyled";
 import MainStyled from "./ui/MainStyled";
-import TitleStyled from "./ui/TitleStyled";
 
 const Spinner = () => {
   return (
@@ -11,7 +11,7 @@ const Spinner = () => {
         alt="icon-cat"
         style={{ width: "100%", height: "100%" }}
       />
-      <TitleStyled>Cargando!!!</TitleStyled>
+      <CursiveStyled>Cargando!!!</CursiveStyled>
     </MainStyled>
   );
 };

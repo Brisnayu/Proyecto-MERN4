@@ -11,11 +11,11 @@ const Home = () => {
     <MainStyled>
       <ArticleStyled $background={`url("./img-main.jpg")`} $height={"80vh"}>
         <TitleStyled $color={"white"} $fontsize={"5rem"}>
-          {`We're`} Happy To Pamper Your Pets!
+          ¡Estamos felices de consentir a sus mascotas!
         </TitleStyled>
       </ArticleStyled>
 
-      <ArticleStyled $height={"15vh"} $top={"-4rem"} $padding={"0 3rem"}>
+      <ArticleStyled $height={"15vh"} $top={"-4rem"} $padding={"0 3rem"} $vista={"none"}>
         <Grid container rowSpacing={1} columnSpacing={{ md: 3 }}>
           <CardHome
             title="Alimentos naturales para mascotas"
@@ -37,10 +37,10 @@ const Home = () => {
           "https://c.wallhere.com/photos/10/f1/1600x1116_px_cat_images_cat_photos_cat_wallpapers_cats_cutties_feline_pictures_kittens-802964.jpg!d"
         }
         alt={"image-pet"}
-        cursive={"Welcome!"}
-        title={"More Than Just A pet Store"}
+        cursive={"Bienvenido!"}
+        title={"Más que una tienda de mascotas"}
         parraf={
-          "PetsLand is here to support every aspect of your pet's life - from food to play. We undestand you demands and offer the best service."
+          "PetsLand está aquí para apoyar todos los aspectos de la vida de su mascota, desde la comida hasta el juego. Entendemos sus demandas y ofrecemos el mejor servicio."
         }
       ></SectionStyled>
     </MainStyled>

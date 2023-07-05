@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import CursiveStyled from "./CursiveStyled";
 import DivStyled from "./DivStyled";
-import TitleStyled from "./TitleStyled";
 
 const StyleSection = styled.section`
   display: flex;
@@ -33,7 +32,7 @@ const StyleSection = styled.section`
     padding: 0;
 
     img {
-      width: 100%;
+      width: 90%;
       height: auto;
     }
   }
@@ -47,7 +46,7 @@ const SectionStyled = ({ src, alt, cursive, title, parraf }) => {
       </DivStyled>
       <DivStyled $flexD={"column"}>
         <CursiveStyled> {cursive} </CursiveStyled>
-        <TitleStyled> {title} </TitleStyled>
+        <h2> {title} </h2>
         <p> {parraf} </p>
       </DivStyled>
     </StyleSection>

@@ -25,7 +25,7 @@ const Gallery = () => {
           "https://static8.depositphotos.com/1361307/912/i/600/depositphotos_9121501-stock-photo-dog-and-cat.jpg"
         }
         alt={"image-cat-and-dog"}
-        cursive={"Adopta a tu primera mascota!"}
+        cursive={"Gallería de mascostas!"}
         title={"Happily Adopted Pets"}
         parraf={"100% adopted 100% real pets."}
       ></SectionStyled>

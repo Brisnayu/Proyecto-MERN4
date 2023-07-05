@@ -24,6 +24,7 @@ const StyleUl = styled.ul`
     background-color: var(--color-background);
     width: 100%;
     height: auto;
+    padding: 2rem 0;
   }
 `;
 

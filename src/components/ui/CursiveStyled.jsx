@@ -6,7 +6,6 @@ const StyleCursive = styled.h3`
   justify-content: flex-start;
   color: var(--color-primary);
   font-family: "Pacifico", cursive;
-  /* font-size: 2rem; */
   font-size: ${({ $fontSize }) => ($fontSize === "coment" ? "1.2rem" : "2rem")};
   font-weight: 100;
 `;

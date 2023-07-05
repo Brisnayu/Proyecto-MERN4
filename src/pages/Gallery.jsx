@@ -1,21 +1,16 @@
 import { Box } from "@mui/material";
-import axios from "axios";
 import { useEffect, useState } from "react";
 
 import GalleryList from "../components/GalleryList";
 import SectionStyled from "../components/ui/SectionStyled";
+import { PetitionCatAndDog } from "../functions/PetitionApi";
 
 const Gallery = () => {
   const [arrayCat, setArrayCat] = useState([]);
   const [arrayDog, setArrayDog] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://api.thecatapi.com/v1/images/search?limit=10")
-      .then((res) => setArrayCat(res.data));
-    axios
-      .get("https://api.thedogapi.com/v1/images/search?limit=10")
-      .then((res) => setArrayDog(res.data));
+    PetitionCatAndDog(setArrayCat, setArrayDog);
   }, []);
 
   return (
@@ -25,8 +20,8 @@ const Gallery = () => {
           "https://static8.depositphotos.com/1361307/912/i/600/depositphotos_9121501-stock-photo-dog-and-cat.jpg"
         }
         alt={"image-cat-and-dog"}
-        cursive={"Gallería de mascostas!"}
-        title={"Happily Adopted Pets"}
+        cursive={"Galería de mascostas!"}
+        title={"Fotos de mascotas felices"}
         parraf={"100% adopted 100% real pets."}
       ></SectionStyled>
 

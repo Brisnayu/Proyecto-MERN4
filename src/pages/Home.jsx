@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid";
 
 import CardHome from "../components/CardHome";
+import { PopupDialog } from "../components/PopupDialog";
 import ArticleStyled from "../components/ui/ArticleStyled";
 import MainStyled from "../components/ui/MainStyled";
 import SectionStyled from "../components/ui/SectionStyled";
@@ -11,7 +12,8 @@ const Home = () => {
     <MainStyled>
       <ArticleStyled $background={`url("./img-main.jpg")`} $height={"80vh"}>
         <TitleStyled $color={"white"} $fontsize={"5rem"}>
-          ¡Estamos felices de consentir a sus mascotas!
+          ¡Estamos felices de consentir a tus mascotas!
+          <PopupDialog />
         </TitleStyled>
       </ArticleStyled>
 
@@ -42,7 +44,7 @@ const Home = () => {
         parraf={
           "PetsLand está aquí para apoyar todos los aspectos de la vida de su mascota, desde la comida hasta el juego. Entendemos sus demandas y ofrecemos el mejor servicio."
         }
-      ></SectionStyled>
+      />
     </MainStyled>
   );
 };

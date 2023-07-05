@@ -8,7 +8,7 @@ const AboutUs = () => {
       <SectionStyled
         src={"https://www.sicveterinaria.es/wp-content/uploads/mascotas-portada.png"}
         alt={"image-pets"}
-        cursive={"About Us!"}
+        cursive={"Nuestro equipo!"}
         title={"Conoce a nuestro equipo"}
         parraf={"100% real professionals not fake."}
       ></SectionStyled>

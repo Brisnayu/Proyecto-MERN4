@@ -25,11 +25,20 @@ select {
   width: 10rem;
   height: 2.5rem;
   text-align: center;
-  background-color: var(--color-secondary);
+  background-color: var(--color-background);
+  border: 3px solid var(--color-secondary);
   border-radius: 10px;
   font-family: "PT Sans", sans-serif;
   font-size: 1.3rem;
   text-transform: capitalize;
   font-weight: bold;
-  border: none;
+}
+
+@keyframes side {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

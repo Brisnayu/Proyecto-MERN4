@@ -7,7 +7,6 @@ const StyleAvatar = styled.div`
   width: 150px;
   height: 250px;
   background-image: ${({ $image }) => $image};
-  /* background-image: url("https://cdn-icons-png.flaticon.com/512/2810/2810758.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

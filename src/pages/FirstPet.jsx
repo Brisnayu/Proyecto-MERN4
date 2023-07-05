@@ -1,7 +1,5 @@
-import styled from "@emotion/styled";
-import React from "react";
-
 import InfoFirstPet from "../components/InfoFirstPet";
+import { StyleInfoFirstPet } from "../components/ui/DivStyled";
 import MainStyled from "../components/ui/MainStyled";
 import SectionStyled from "../components/ui/SectionStyled";
 import {
@@ -13,18 +11,6 @@ import {
   firstTortoise,
 } from "../functions/InformationPets";
 
-const StyleInfoFirstPet = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: auto;
-  margin: 2rem 0;
-
-  @media only screen and (max-width: 624px) {
-    width: 95%;
-  }
-`;
-
 const FirstPet = () => {
   return (
     <MainStyled>
@@ -33,8 +19,8 @@ const FirstPet = () => {
           "https://phantom-marca.unidadeditorial.es/3acad74a7b46aa6f5c8c75f1ee01a1a9/resize/828/f/jpg/assets/multimedia/imagenes/2022/11/10/16681001689615.jpg"
         }
         alt={"image-pets"}
-        cursive={"First Pet"}
-        title={"Follow Our Advice"}
+        cursive={"Primera mascota"}
+        title={"Sigue nuestros consejos"}
         parraf={"100% real advice that you can apply 100% of the time."}
       ></SectionStyled>
 

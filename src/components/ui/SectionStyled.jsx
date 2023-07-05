@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 import CursiveStyled from "./CursiveStyled";
-import DivStyled from "./DivStyled";
+import { StyleDiv } from "./DivStyled";
+import SubTitle from "./SubtitleStyled";
 
 const StyleSection = styled.section`
   display: flex;
@@ -24,7 +25,6 @@ const StyleSection = styled.section`
   }
 
   @media only screen and (max-width: 960px) {
-    /* border: 5px solid green; */
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -41,14 +41,14 @@ const StyleSection = styled.section`
 const SectionStyled = ({ src, alt, cursive, title, parraf }) => {
   return (
     <StyleSection>
-      <DivStyled $flexD={"column"}>
+      <StyleDiv $flexD={"column"}>
         <img src={src} alt={alt} />
-      </DivStyled>
-      <DivStyled $flexD={"column"}>
+      </StyleDiv>
+      <StyleDiv $flexD={"column"}>
         <CursiveStyled> {cursive} </CursiveStyled>
-        <h2> {title} </h2>
+        <SubTitle> {title} </SubTitle>
         <p> {parraf} </p>
-      </DivStyled>
+      </StyleDiv>
     </StyleSection>
   );
 };

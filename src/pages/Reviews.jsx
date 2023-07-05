@@ -1,24 +1,7 @@
-import React from "react";
-import { styled } from "styled-components";
-
 import CarouselReviews from "../components/Carousel";
+import { CarouselContainer } from "../components/ui/DivStyled";
 import MainStyled from "../components/ui/MainStyled";
 import SectionStyled from "../components/ui/SectionStyled";
-
-const CarouselContainer = styled.div`
-  padding: 3rem;
-  margin: 2rem;
-  width: 50%;
-  height: 100%;
-  border: 3px solid var(--color-secondary);
-  -webkit-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
-  box-shadow: 18px -13px 10px -6px rgba(0, 0, 0, 0.75);
-
-  @media only screen and (max-width: 960px) {
-    width: 95%;
-  }
-`;
 
 const Reviews = () => {
   return (

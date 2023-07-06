@@ -11,11 +11,7 @@ const InfoFirstPet = ({ array, iconPet, pet }) => {
           <img src="./src/assets/icon-arrow.png" alt="icon-arrow" width="35rem" />
         }
       >
-        <img
-          src={iconPet}
-          alt="icon-fish"
-          style={{ height: "4.5rem", marginRight: "2rem" }}
-        />
+        <img src={iconPet} alt={pet} style={{ height: "4.5rem", marginRight: "2rem" }} />
         <SubTitle>Consejos para tu primer {pet} en tu hogar</SubTitle>
       </AccordionSummary>
       <AccordionDetails>

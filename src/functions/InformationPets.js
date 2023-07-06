@@ -49,3 +49,36 @@ export const firstTortoise = [
   "Mantén el agua limpia y proporciona un área para que tu tortuga pueda nadar y beber agua fresca.",
   "Realiza revisiones regulares de la salud de tu tortuga con un veterinario especializado en reptiles.",
 ];
+
+export const IconFirstPet = [
+  {
+    array: firstDog,
+    iconPet: "./src/assets/icon-pets/icon-dog.png",
+    pet: "perro",
+  },
+  {
+    array: firstCat,
+    iconPet: "./src/assets/icon-pets/icon-cat.png",
+    pet: "gato",
+  },
+  {
+    array: firstRabbit,
+    iconPet: "./src/assets/icon-pets/icon-rabbit.png",
+    pet: "conejo",
+  },
+  {
+    array: firstTortoise,
+    iconPet: "./src/assets/icon-pets/icon-tortoise.png",
+    pet: "/ primera tortuga",
+  },
+  {
+    array: firstFish,
+    iconPet: "./src/assets/icon-pets/icon-fish.png",
+    pet: "pez",
+  },
+  {
+    array: firstBird,
+    iconPet: "./src/assets/icon-pets/icon-bird.png",
+    pet: "ave",
+  },
+];

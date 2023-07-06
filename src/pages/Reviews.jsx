@@ -14,7 +14,7 @@ const Reviews = () => {
         cursive={"Reviews!"}
         title={"What Our Clients Say About Us"}
         parraf={"100% real feedback from 100% real customers."}
-      ></SectionStyled>
+      />
       <CarouselContainer>
         <CarouselReviews />
       </CarouselContainer>

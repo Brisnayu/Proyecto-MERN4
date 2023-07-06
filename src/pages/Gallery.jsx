@@ -23,7 +23,7 @@ const Gallery = () => {
         cursive={"Galería de mascostas!"}
         title={"Fotos de mascotas felices"}
         parraf={"100% adopted 100% real pets."}
-      ></SectionStyled>
+      />
 
       {arrayCat.length > 0 && (
         <Box sx={{ display: "flex", flexDirection: "column" }}>

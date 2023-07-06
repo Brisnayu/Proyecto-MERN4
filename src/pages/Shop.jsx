@@ -24,7 +24,7 @@ const Shop = () => {
         cursive={"Tienda!"}
         title={"Lo mejor para tus mascotas"}
         parraf={"100% real toys from 100% real stores."}
-      ></SectionStyled>
+      />
 
       <CardSelect product={product} setProduct={setProduct} />
 

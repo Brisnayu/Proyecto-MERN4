@@ -13,7 +13,7 @@ const Header = () => {
   };
   return (
     <HeaderStyled>
-      <CursiveStyled>PetsLand.com</CursiveStyled>
+      <CursiveStyled>Patitas.com</CursiveStyled>
       <LinkPages handleClick={handleClick} $open={open} />
       <ButtonNav handleClick={handleClick} />
     </HeaderStyled>

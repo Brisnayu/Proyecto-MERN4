@@ -11,7 +11,7 @@ const AboutUs = () => {
         cursive={"Nuestro equipo!"}
         title={"Conoce a nuestro equipo"}
         parraf={"100% real professionals not fake."}
-      ></SectionStyled>
+      />
       <CardPersonal />
     </MainStyled>
   );

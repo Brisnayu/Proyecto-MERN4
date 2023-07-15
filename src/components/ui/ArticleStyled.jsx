@@ -20,14 +20,14 @@ const StyleArticle = styled.article`
   }
 `;
 
-const ArticleStyled = ({ $background, $height, $top, $padding, $vista, children }) => {
+const ArticleStyled = ({ $background, $height, $top, $padding, vista, children }) => {
   return (
     <StyleArticle
       $background={$background}
       $height={$height}
       $top={$top}
       $padding={$padding}
-      $vista={$vista}
+      $vista={vista}
     >
       {children}
     </StyleArticle>

@@ -10,7 +10,7 @@ const StyleLabel = styled.label`
 const LabelStyle = ({ text }) => {
   return (
     <StyleLabel>
-      <CursiveStyled $fontSize={"coment"}>{text}</CursiveStyled>
+      <CursiveStyled fontSize={"coment"}>{text}</CursiveStyled>
     </StyleLabel>
   );
 };

@@ -17,7 +17,7 @@ const Home = () => {
         </TitleStyled>
       </ArticleStyled>
 
-      <ArticleStyled $height={"15vh"} $top={"-4rem"} $padding={"0 3rem"} $vista={"none"}>
+      <ArticleStyled $height={"15vh"} $top={"-4rem"} $padding={"0 3rem"} vista={"none"}>
         <Grid container rowSpacing={1} columnSpacing={{ md: 3 }}>
           <CardHome
             title="Alimentos naturales para mascotas"

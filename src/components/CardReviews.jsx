@@ -14,7 +14,7 @@ const CardReviews = ({ avatar, nombre, stars, texto }) => {
             alt="icon-heart"
           />
         }
-        title={<CursiveStyled $fontSize={"coment"}>{nombre}</CursiveStyled>}
+        title={<CursiveStyled fontSize={"coment"}>{nombre}</CursiveStyled>}
         subheader={<Rating name="text-feedback" value={stars} readOnly precision={0.5} />}
       />
       <CardContent>

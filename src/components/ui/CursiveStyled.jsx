@@ -10,8 +10,8 @@ const StyleCursive = styled.h3`
   font-weight: 100;
 `;
 
-const CursiveStyled = ({ children, $fontSize }) => {
-  return <StyleCursive $fontSize={$fontSize}>{children}</StyleCursive>;
+const CursiveStyled = ({ children, fontSize }) => {
+  return <StyleCursive $fontSize={fontSize}>{children}</StyleCursive>;
 };
 
 export default CursiveStyled;

@@ -7,11 +7,12 @@ const StyleNavbar = styled.nav`
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 2;
-  top: 10vh;
+  top: 0;
   right: ${({ $open }) => ($open ? "0" : "-100%")};
   width: 100%;
   height: 100vh;
   transition: right 0.3s linear;
+  padding-top: 10vh;
 
   @media only screen and (min-width: 960px) {
     flex-direction: row;

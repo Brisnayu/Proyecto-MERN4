@@ -12,6 +12,10 @@ const StyleFooter = styled.footer`
   p {
     text-align: center;
   }
+
+  img:hover {
+    animation: zoom 1s ease-in;
+  }
 `;
 
 const FooterStyled = ({ children }) => {

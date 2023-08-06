@@ -14,6 +14,7 @@
   outline: none;
   color: inherit;
   animation: side 1s ease;
+  scroll-behavior: smooth;
 }
 
 .active {
@@ -40,5 +41,18 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    scale: 1;
+    filter: invert();
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
   }
 }

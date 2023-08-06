@@ -11,11 +11,16 @@ const Header = () => {
   const handleClick = () => {
     setOpen(!open);
   };
+
   return (
     <HeaderStyled>
       <CursiveStyled>Patitas.com</CursiveStyled>
       <LinkPages handleClick={handleClick} $open={open} />
-      <ButtonNav handleClick={handleClick} />
+      <ButtonNav
+        functionality={handleClick}
+        src="/src/assets/icon-hamburger.png"
+        alt="icon-menu"
+      />
     </HeaderStyled>
   );
 };

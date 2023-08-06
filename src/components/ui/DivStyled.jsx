@@ -36,6 +36,11 @@ export const StyleCardShop = styled.div`
   height: 25rem;
   border: 3px solid var(--color-secondary);
   border-radius: 10px;
+  transition: all 1s ease;
+
+  &:hover {
+    scale: 1.05;
+  }
 `;
 
 export const StyleShopContainer = styled.div`

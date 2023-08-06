@@ -1,13 +1,9 @@
 import ButtonNavStyled from "./ui/ButtonStyled";
 
-const ButtonNav = ({ handleClick }) => {
+const ButtonNav = ({ functionality, src, alt }) => {
   return (
-    <ButtonNavStyled onClick={handleClick}>
-      <img
-        style={{ width: "40px" }}
-        src="/src/assets/icon-hamburger.png"
-        alt="icon-menu"
-      />
+    <ButtonNavStyled onClick={functionality}>
+      <img src={src} alt={alt} />
     </ButtonNavStyled>
   );
 };

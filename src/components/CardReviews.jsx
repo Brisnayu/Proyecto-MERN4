@@ -18,7 +18,15 @@ const CardReviews = ({ avatar, nombre, stars, texto }) => {
         subheader={<Rating name="text-feedback" value={stars} readOnly precision={0.5} />}
       />
       <CardContent>
-        <p style={{ color: "var(--color-secondary)" }}>{texto}</p>
+        <p
+          style={{
+            color: "var(--color-secondary)",
+            padding: "0 3rem",
+            textAlign: "justify",
+          }}
+        >
+          {texto}
+        </p>
       </CardContent>
     </Paper>
   );

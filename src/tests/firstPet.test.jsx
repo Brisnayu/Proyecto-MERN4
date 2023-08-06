@@ -7,7 +7,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, test } from "vitest";
 
 import { IconFirstPet } from "../functions/InformationPets";
-import FirstPet from "./FirstPet";
+import FirstPet from "../pages/FirstPet";
 
 describe("FirstPet", () => {
   test("Should be render the correct elements", () => {

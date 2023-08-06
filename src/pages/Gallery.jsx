@@ -29,12 +29,7 @@ const Gallery = () => {
         cursive={"Galería de mascotas!"}
         title={"Fotos de mascotas felices"}
         parraf={"100% adopted 100% real pets."}
-        className="prueba"
       />
-
-      <h3 id="arriba" style={{ color: "white" }}>
-        Init
-      </h3>
 
       {arrayCat.length > 0 && (
         <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>

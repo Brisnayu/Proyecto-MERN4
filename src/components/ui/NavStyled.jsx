@@ -12,7 +12,7 @@ const StyleNavbar = styled.nav`
   width: 100%;
   height: 100vh;
   transition: right 0.3s linear;
-  padding-top: 10vh;
+  padding-top: ${({ $open }) => ($open ? "10vh" : "0")};
 
   @media only screen and (min-width: 960px) {
     flex-direction: row;

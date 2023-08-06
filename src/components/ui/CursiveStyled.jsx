@@ -8,6 +8,7 @@ const StyleCursive = styled.h3`
   font-family: "Pacifico", cursive;
   font-size: ${({ $fontSize }) => ($fontSize === "coment" ? "1.2rem" : "2rem")};
   font-weight: 100;
+  text-align: center;
 `;
 
 const CursiveStyled = ({ children, fontSize }) => {

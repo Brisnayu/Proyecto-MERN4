@@ -7,7 +7,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, test } from "vitest";
 
 import { ProfessionalsPets } from "../functions/ProfessionalsPets";
-import AboutUs from "./AboutUs";
+import AboutUs from "../pages/AboutUs";
 
 describe("AboutUs", () => {
   test("Should be render the correct elements", () => {

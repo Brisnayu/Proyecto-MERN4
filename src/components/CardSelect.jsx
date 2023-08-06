@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { categories } from "../functions/ShopProducts";
 import LabelStyle from "./ui/SelectStyled";
 
-const PruebaSelect = styled.select`
+const ContainerSelect = styled.select`
   width: 10rem;
   height: 2.5rem;
   text-align: center;
@@ -22,10 +22,11 @@ const CardSelect = ({ product, setProduct }) => {
     <>
       <LabelStyle text={"Puedes filtrar por la categoría de lo que estés buscando!"} />
 
-      <PruebaSelect
+      <ContainerSelect
         name="categories-products"
         onChange={(event) => setProduct(event.target.value)}
         value={product}
+        id="prueba1"
       >
         <option value="todo">todo</option>
         {categories.map((category) => (
@@ -33,7 +34,7 @@ const CardSelect = ({ product, setProduct }) => {
             {category}
           </option>
         ))}
-      </PruebaSelect>
+      </ContainerSelect>
       <h1>Estas buscando {product}</h1>
     </>
   );

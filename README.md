@@ -1,7 +1,7 @@
-# Proyecto MERN4:  Styled Compnents, Vitest y Testing Library.
+# Proyecto MERN4: Styled Compnents, Vitest y Testing Library.
 
-¡Hola! 👋🏽 Este es mi primer proyecto usando solamente Styled Components para la maquetación. Además se realizaron diferentes test para 
-así realizar comprobaciones de los diferentes elementos que se encuentran en la página. 
+¡Hola! 👋🏽 Este es mi primer proyecto usando solamente Styled Components para la maquetación. Además se realizaron diferentes test para
+así realizar comprobaciones de los diferentes elementos que se encuentran en la página.
 
 A continuación te dejo el enlace del proyecto desplegado, para que puedas echar un vistazo a la parte del frontend:
 [Proyecto-MERN4](https://proyecto-juegos-brisna-paez.netlify.app/)
@@ -26,7 +26,7 @@ Dentro de cada apartado, se ha utilizado un mismo elemento, solamente modificand
 
 ## Comprobación elementos de traidos desde una Api ✅
 
-Para las imágenes de la galería, se uso los datos traídos de dos diferentes apis, las cuales proporcionan imágenes aleatorias de gatos o perros, respectivamente. 
+Para las imágenes de la galería, se uso los datos traídos de dos diferentes apis, las cuales proporcionan imágenes aleatorias de gatos o perros, respectivamente.
 
 ![página de la galería](https://res.cloudinary.com/dx8j6h1rb/image/upload/v1691518774/Proyecto7%2C%20styled-components/Image-gallery.png)
 

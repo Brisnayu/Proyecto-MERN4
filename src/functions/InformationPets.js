@@ -53,32 +53,32 @@ export const firstTortoise = [
 export const IconFirstPet = [
   {
     array: firstDog,
-    iconPet: "./src/assets/icon-pets/icon-dog.png",
+    iconPet: "./assets/icon-pets/icon-dog.png",
     pet: "perro",
   },
   {
     array: firstCat,
-    iconPet: "./src/assets/icon-pets/icon-cat.png",
+    iconPet: "./assets/icon-pets/icon-cat.png",
     pet: "gato",
   },
   {
     array: firstRabbit,
-    iconPet: "./src/assets/icon-pets/icon-rabbit.png",
+    iconPet: "./assets/icon-pets/icon-rabbit.png",
     pet: "conejo",
   },
   {
     array: firstTortoise,
-    iconPet: "./src/assets/icon-pets/icon-tortoise.png",
+    iconPet: "./assets/icon-pets/icon-tortoise.png",
     pet: "/ primera tortuga",
   },
   {
     array: firstFish,
-    iconPet: "./src/assets/icon-pets/icon-fish.png",
+    iconPet: "./assets/icon-pets/icon-fish.png",
     pet: "pez",
   },
   {
     array: firstBird,
-    iconPet: "./src/assets/icon-pets/icon-bird.png",
+    iconPet: "./assets/icon-pets/icon-bird.png",
     pet: "ave",
   },
 ];

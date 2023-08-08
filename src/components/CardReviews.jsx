@@ -10,7 +10,7 @@ const CardReviews = ({ avatar, nombre, stars, texto }) => {
         action={
           <img
             style={{ height: "2.5rem" }}
-            src="./src/assets/icon-heart.png"
+            src="./assets/icon-heart.png"
             alt="icon-heart"
           />
         }

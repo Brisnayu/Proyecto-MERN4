@@ -9,7 +9,11 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
-    setOpen(!open);
+    if (window.innerWidth > 960) {
+      setOpen(false);
+    } else {
+      setOpen(!open);
+    }
   };
 
   return (

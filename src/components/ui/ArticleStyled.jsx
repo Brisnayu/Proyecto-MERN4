@@ -14,7 +14,7 @@ const StyleArticle = styled.article`
   top: ${({ $top }) => $top};
   padding: ${({ $padding }) => $padding};
 
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 950px) {
     display: ${({ $vista }) => ($vista === "none" ? "none" : null)};
     justify-content: center;
   }

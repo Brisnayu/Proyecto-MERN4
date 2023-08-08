@@ -4,12 +4,9 @@ import NavStyled from "./ui/NavStyled";
 import UlStyled from "./ui/UlStyled";
 
 const LinkPages = ({ handleClick, $open }) => {
-  const prueba = {
-    backgroundColor: open ? "red" : "black",
-  };
   return (
     <NavStyled $open={$open}>
-      <UlStyled style={prueba}>
+      <UlStyled>
         <NavLink onClick={handleClick} to="/">
           Inicio
         </NavLink>

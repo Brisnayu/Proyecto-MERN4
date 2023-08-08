@@ -62,6 +62,7 @@ export const PopupDialog = () => {
         variant="outlined"
         onClick={handleClickOpen}
         style={{ backgroundColor: "var(--color-background)" }}
+        data-testid="button-modal"
       >
         Click
       </Button>
@@ -78,7 +79,9 @@ export const PopupDialog = () => {
           </Typography>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Entendido!</Button>
+          <Button onClick={handleClose} data-testid="button-modal-close">
+            Entendido!
+          </Button>
         </DialogActions>
       </BootstrapDialog>
     </div>

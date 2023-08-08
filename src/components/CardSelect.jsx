@@ -26,7 +26,7 @@ const CardSelect = ({ product, setProduct }) => {
         name="categories-products"
         onChange={(event) => setProduct(event.target.value)}
         value={product}
-        id="prueba1"
+        data-testid="select"
       >
         <option value="todo">todo</option>
         {categories.map((category) => (
@@ -35,7 +35,6 @@ const CardSelect = ({ product, setProduct }) => {
           </option>
         ))}
       </ContainerSelect>
-      <h1>Estas buscando {product}</h1>
     </>
   );
 };

@@ -4,7 +4,7 @@
  */
 
 import { render, screen } from "@testing-library/react";
-// import { userEvent } from "@testing-library/user-event/dist/types/setup";
+import userEvent from "@testing-library/user-event";
 import { describe, test } from "vitest";
 
 import { categories } from "../functions/ShopProducts";
@@ -47,20 +47,18 @@ describe("Shop", () => {
     });
   });
 
-  test("Componentes dentro del select", () => {
-    render(<Shop categories={categories} />);
-    let option$$ = screen.getByRole("option", { name: "todo" });
-    expect(option$$).toBeInTheDocument();
+  test("Should display the options correctly in select", async () => {
+    render(<Shop />);
+    let optionInitial = screen.getByRole("option", { name: "todo" });
+    expect(optionInitial).toBeInTheDocument();
 
-    let select$$ = document.querySelector("#prueba1");
-    expect(select$$).toBeInTheDocument();
+    let selectShop = screen.getByTestId("select");
+    expect(selectShop).toBeInTheDocument();
 
-    // Faltaría fingir que le estoy dando click al evento y estoy recorriendo las diferentes categorías de los productos
+    await userEvent.click(selectShop);
 
-    // userEvent.type(click, select$$);
-
-    // for (const category of categories) {
-    //   expect(screen.getByText(category)).toBeInTheDocument();
-    // }
+    for (const category of categories) {
+      expect(screen.getByText(category)).toBeInTheDocument();
+    }
   });
 });

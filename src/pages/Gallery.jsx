@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import ButtonNav from "../components/ButtonNav";
 import GalleryList from "../components/GalleryList";
+import Spinner from "../components/Spinner";
 import CursiveStyled from "../components/ui/CursiveStyled";
 import SectionStyled from "../components/ui/SectionStyled";
 import { PetitionCatAndDog } from "../functions/PetitionApi";
@@ -31,18 +32,20 @@ const Gallery = () => {
         parraf={"100% adopted 100% real pets."}
       />
 
-      {arrayCat.length > 0 && (
+      {arrayCat.length > 0 ? (
         <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <CursiveStyled>Fotos aleatorias de gatitos</CursiveStyled>
           <GalleryList arrayList={arrayCat} />
           <CursiveStyled>Fotos aleatorias de perritos</CursiveStyled>
           <GalleryList arrayList={arrayDog} />
         </Box>
+      ) : (
+        <Spinner />
       )}
 
       <ButtonNav
         functionality={isUp}
-        src="/src/assets/icon-up.png"
+        src="/assets/icon-up.png"
         alt="icon-arrow-up"
         style={{ borderRadius: "50%" }}
       />

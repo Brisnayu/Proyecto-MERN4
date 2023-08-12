@@ -22,7 +22,7 @@ const Header = () => {
       <LinkPages handleClick={handleClick} $open={open} />
       <ButtonNav
         functionality={handleClick}
-        src="/src/assets/icon-hamburger.png"
+        src="/assets/icon-hamburger.png"
         alt="icon-menu"
       />
     </HeaderStyled>

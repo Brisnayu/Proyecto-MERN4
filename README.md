@@ -4,7 +4,7 @@
 así realizar comprobaciones de los diferentes elementos que se encuentran en la página.
 
 A continuación te dejo el enlace del proyecto desplegado, para que puedas echar un vistazo a la parte del frontend:
-[Proyecto-MERN4](https://proyecto-juegos-brisna-paez.netlify.app/)
+[Proyecto-MERN4](https://proyecto-styled-components-brisna.netlify.app/)
 
 Pero recuerda, que lo realmente interesante se encuentra en el código, con los diferentes elementos reutilizables y la manera de maquetar.
 

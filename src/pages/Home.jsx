@@ -45,7 +45,6 @@ const Home = () => {
           "PetsLand está aquí para apoyar todos los aspectos de la vida de su mascota, desde la comida hasta el juego. Entendemos sus demandas y ofrecemos el mejor servicio."
         }
       />
-      <h1 style={{ color: "#cedb88" }}>HOLA</h1>
     </MainStyled>
   );
 };

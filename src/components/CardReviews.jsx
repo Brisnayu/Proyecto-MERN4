@@ -6,14 +6,8 @@ const CardReviews = ({ avatar, nombre, stars, texto }) => {
   return (
     <Paper>
       <CardHeader
+        style={{ display: "flex", flexDirection: "column" }}
         avatar={<Avatar src={avatar} sx={{ bgcolor: "var(--color-terciary)" }}></Avatar>}
-        action={
-          <img
-            style={{ height: "2.5rem" }}
-            src="./assets/icon-heart.png"
-            alt="icon-heart"
-          />
-        }
         title={<CursiveStyled fontSize={"coment"}>{nombre}</CursiveStyled>}
         subheader={<Rating name="text-feedback" value={stars} readOnly precision={0.5} />}
       />
@@ -21,7 +15,6 @@ const CardReviews = ({ avatar, nombre, stars, texto }) => {
         <p
           style={{
             color: "var(--color-secondary)",
-            padding: "0 3rem",
             textAlign: "justify",
           }}
         >

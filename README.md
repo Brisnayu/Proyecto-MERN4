@@ -1,7 +1,7 @@
-# Proyecto MERN4: Styled Compnents, Vitest y Testing Library.
+# Proyecto MERN4: Styled Components, Vitest y Testing Library.
 
 ¡Hola! 👋🏽 Este es mi primer proyecto usando solamente Styled Components para la maquetación. Además se realizaron diferentes test para
-así realizar comprobaciones de los diferentes elementos que se encuentran en la página.
+así realizar comprobaciones de los elementos que se encuentran en la página.
 
 A continuación te dejo el enlace del proyecto desplegado, para que puedas echar un vistazo a la parte del frontend:
 [Proyecto-MERN4](https://proyecto-styled-components-brisna.netlify.app/)
